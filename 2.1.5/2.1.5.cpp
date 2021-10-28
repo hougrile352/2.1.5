@@ -2,13 +2,23 @@
 //
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+    string firststring; string secondstring;
+
+    cout << "First string!\n";
+    getline(cin, firststring);
+
+    cout << "Second string!\n";
+    getline(cin, secondstring);
+
+    cout << secondstring.compare(firststring);
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
