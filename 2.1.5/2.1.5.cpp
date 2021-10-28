@@ -6,17 +6,22 @@
 
 using namespace std;
 
+int testFunction(string str1, string str2)
+{
+    return str2.compare(str1) >= 0; //Compare strings and return
+}
+
 int main()
 {
     string firststring; string secondstring;
 
-    cout << "First string!\n";
+    cout << "First string!\n"; //Get info
     getline(cin, firststring);
 
     cout << "Second string!\n";
     getline(cin, secondstring);
 
-    cout << secondstring.compare(firststring);
+    cout << testFunction(firststring, secondstring); //Run the function and print
 }
 
 
